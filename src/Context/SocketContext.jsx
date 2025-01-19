@@ -11,7 +11,7 @@ function SocketContext({ children }) {
 
     useEffect(() => {
         if (userId) {
-            const newSocket = io('http://localhost:3000', {
+            const newSocket = io('https://chat-application-test-backend.onrender.com', {
                 query: { userId },
             })
             setSocket(newSocket);
